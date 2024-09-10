@@ -31,8 +31,8 @@ mongoose
 
 const locationRoutes = require("./routes/locationRoutes");
 app.use("/api", locationRoutes);
-const trainseatsroutes=require('../backend/routes/trainseatroutes')
-const Bookingroutes=require('../backend/routes/BookingConfirmation')
+const trainseatsroutes=require('./routes/trainseatroutes')
+const Bookingroutes=require('./routes/BookingConfirmation')
 
 app.use("/book",trainseatsroutes);
 app.use("/books",Bookingroutes);
